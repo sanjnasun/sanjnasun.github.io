@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-
+<link rel='stylesheet' href='styles.css'>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Kalam&family=Quicksand&family=Rajdhani:wght@300&display=swap&family=Onest:wght@200&display=swap" rel="stylesheet">
@@ -10,442 +10,21 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Lustria&family=Onest:wght@200&display=swap" rel="stylesheet">
 <title>Sanjna Sunil's Portfolio</title>
-<style>
+<link rel="icon" href="favicon.png" type="image/png">
 
-  body {
-    margin: 0;
-    padding: 0;
-    width:100%;
-  }
 
-  .header {
-    height: 100vh;
-    margin: 0 auto;
-    position: relative;
-    width: 100%;
-    background-color:hsla(0,100%,50%,1);
-    background-image:
-    radial-gradient(at 40% 20%, hsla(28,100%,74%,1) 0px, transparent 50%),
-    radial-gradient(at 80% 0%, hsla(189,100%,56%,1) 0px, transparent 50%),
-    radial-gradient(at 0% 50%, hsla(355,100%,93%,1) 0px, transparent 50%),
-    radial-gradient(at 80% 50%, hsla(340,100%,76%,1) 0px, transparent 50%),
-    radial-gradient(at 0% 100%, hsla(22,100%,77%,1) 0px, transparent 50%),
-    radial-gradient(at 80% 100%, hsla(242,100%,70%,1) 0px, transparent 50%),
-    radial-gradient(at 0% 0%, hsla(343,100%,76%,1) 0px, transparent 50%);
-  }
-
-  .header h1 {
-  position: absolute;
-  top: 34%;
-  left: 31.5%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-family: 'Onest', sans-serif;
-  font-size:100px; 
-  opacity: 0; 
-  animation: fadeIn 3s forwards; 
-}
-
-
-@keyframes fadeIn {
-  from {
-    opacity: 0; 
-  }
-  to {
-    opacity: 1; 
-  }
-}
-
-
-
-  .header h6 {
-    position: absolute;
-    top:46%;
-    left:19.5%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-family: 'Onest', sans-serif;
-    font-size:20px;
-    opacity: 0; 
-  animation: fadeIn 3s forwards; 
-}
-
-
-@keyframes fadeIn {
-  from {
-    opacity: 0; 
-  }
-  to {
-    opacity: 1; 
-}
-  }
-
-  .nav {
-    position: absolute;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    padding: 10px 0;
-    font-family: 'Quicksand', sans-serif;
-    font-size:20px;
-  }
-
-  .nav a {
-    text-decoration: none;
-    color: white;
-    margin: 0 10px;
-  }
-
-  .nav a:hover {
-    color: green;
-  }
-
-
-    .images-container {
-    position: absolute;
-    top: 56%; 
-    left:16%;
-    transform: translateX(-50%);
-    opacity: 0; 
-  animation: fadeIn 3s forwards; 
-  }
-
-  .images-container img {
-    display: inline-block;
-    margin: 0 15px;
-  }
-
-  .images-container img:hover {
-  transform: scale(1.1); 
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0; 
-  }
-  to {
-    opacity: 1; 
-}
-  }
-
-  .about-me {
-    background-color:white;
-    text-align: center;
-    padding: 10px;
-    height:100vh;
-    font-family: 'Lato', sans-serif;
-    color:black;
-  }
-
-  .about-me h1{
-    font-size:300%;
-    text-align:center;
-    font-family:'Onest', sans-serif;
-    padding:0%;
-  }
-  .about-me h3{
-    text-align:center;
-    padding:0%;
-
-  }
-
-  .about-me p{
-     font-size:20px;
-     font-family:'Lato', sans-serif;
-  }
-
-  #intro {
-    width: 100%;
-  }
-
-  #intro img {
-    display: inline-block;
-    max-width:50%;
-    max-height:48%;
-    margin-right:7%;
-    margin-top:1%;
-    padding-bottom:4%;
-    border-radius:3%;
-  }
-
-  #intro p {
-    display: inline-block;
-    width: 60%;
-    vertical-align: top;
-    text-align: left;
-    padding-bottom:4%;
-
-  }
-
-  .profile {
-    width: 35%;
-    float: left;
-    padding-left:11%;
-    text-align: left;
-    padding-right:5%;
-
-  }
-
-  .profile p
-  {
-    font-size:18px;
-    font-family:'Lato', sans-serif;
-    font-weight: 100px;
-  }
-
-
-  #skills {
-    width: 45%;
-    float: right;
-    text-align: left;
-    font-size:18px;
-  }
-
-  .skill-bar {
-    width:70%;
-    background-color: #ccc;
-    margin-top: 20px;
-    height: 10px;
-    margin-top:2%;
-    margin-bottom:1% ;
-    font-size:20px;
-    font-family:'Lato', sans-serif;
-
-  }
-
-  .skill-bar-fill {
-    width: 0;
-    height: 100%;
-    background-color:#ccffff;
-    animation: fill 2s ease forwards;
-
-  }
-
-  @keyframes fill {
-    0% {
-      width: 0;
-    }
-  }
-
-  .skills-list {
-    margin-top: 10px;
-  }
-
-  .skill-item {
-    margin-bottom: 8px;
-  }
-
-
-.experience
-{
-  height:140vh;
-  background-color: hsla(242,100%,70%,0.1);
-}
-.experience h1
-{
-  padding-top:4%;
-  text-align:center;
-  font-family:'Onest', sans-serif;
-  font-size:300%;
-}
-
-.experience h4
-{
-  padding-top:0%;
-  text-align:center;
-}
-.container {
-    display: flex;
-    align-items: center;
-    padding-right:10%;
-    padding-left:10%;
-    font-family:'Lato', sans-serif;
-
-
-}
-
-.timeline {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    position: relative;
-}
-
-.timeline-container {
-    display: flex;
-    margin-bottom: 20px;
-    position: relative;
-    font-size:14px;
-    font-family:'Lato', sans-serif;
-}
- .experience br {
-    height: 1px; 
-    line-height: 1px;
-  }
-.timeline-line {
-    background:#B7B7A4;
-    width: 2px;
-    position: absolute;
-    left: 3%; 
-    top: 0;
-    bottom: 0;
-
-}
-
-.timeline-box {
-    flex: 1;
-    background-color:hsla(242,100%,70%,0.09);
-    border-radius: 5px;
-    padding: 20px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    margin-left: 5%; 
-    font-size:15px;
-}
-
-
-.projects h1
-{
-  text-align:center;
-  padding-top:2%;
-  font-family: 'Onest', sans-serif;
-  font-size:300%;
-}
-
-
-.projects h3
-{
-  text-align:center;
-  font-family: 'Onest', sans-serif;
-}
-.projects {
-    height:100vh; 
-   background-color: white;
-      text-align: center;
-    text-align: center;
-    font-family: 'Onest', sans-serif;
-}
-
-.project-holder {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.project-card {
-    width:20%;
-    background-color:#4d4d4d;
-    border: 1px solid #ddd;
-    border-radius:2%;
-    margin:5%;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s, box-shadow 0.2s;
-    text-align: center;
-    font-family:'Lato', sans-serif;
-    color:white;
-}
-
-
-.project-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
-}
-
-.project-image {
-    width: 100%;
-    height: 150px;
-    background-image: url('website.png');
-    background-size: cover;
-    background-position: center;
-}
-
-.project-details {
-    padding: 20px;
-}
-
-.project-title {
-    font-size: 20px;
-    font-weight: bold;
-    margin: 0;
-}
-
-.project-languages {
-    margin-top: 10px;
-}
-
-
-.contact {
-  height: 50vh;
-  background-color:hsla(242,100%,70%,0.1);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-family:'Lato', sans-serif;
-}
-
-.contact h4 {
-  font-size: 100%;
-  margin: 0.01% 0; 
-  color: #333;
-  padding-top: 0; 
-  font-family:'Onest', sans-serif;
-}
-
-.contact h3 {
-  font-size: 32px;
-  padding-top: 0; 
-  color: #333;
-  font-family:'Onest', sans-serif;
-}
-
-.contact-holder {
-  display: inline-block; 
-  padding:4%; 
-}
-
-
-
-.footer {
-    font-size: 12px; 
-    color: #c4c4c4; 
-    background-color:black; 
-    text-align: right; 
-    padding: 10px; 
-    margin: 0 auto; 
-    font-family:'Lato', sans-serif;
-}
-
-
-html {
-    scroll-behavior: smooth;
-  }
-
-
-</style>
 </head>
 
 <body>
-
-
-
-</body>
-</html>
-
-
-
-
-
 
 
 <div class='header' id='head'>
   <h1>Hi, I'm Sanjna!</h1>
   <h6>Student, Developer, Engineer</h6> 
   <div class='images-container'>
-    <a href="https://www.google.com"><img src="github.png" width='25' height='25'></a>
+    <a href="https://github.com/sanjnasun/sanjnasun.github.io"><img src="github.png" width='25' height='25'></a>
     <a href="https://www.linkedin.com/in/sanjna-sunil26/"><img src="linkedin.png" width='25' height='20'></a>
-    <a href="mailto:sanjnasu@usc.edu"><img src="email.jpg" width='25' height='25'></a>
+    <a href="mailto:sanjnasu@usc.edu"><img src="email.png" width='25' height='25'></a>
   </div>
 </div>
 
@@ -456,11 +35,6 @@ html {
   <a href="#work">Projects</a>
   <a href="#footer1">Contact</a>
 </div>
-
-
-
-
-
 
 
 
@@ -581,7 +155,7 @@ html {
 
 
 
-
+<!-- 
 <div class="projects" id="work">
     <h1>Projects</h1>
     <h3>Click Cards To Learn More</h3>
@@ -591,6 +165,7 @@ html {
             <div class="project-details">
                 <p class="project-title">RateMyDiningHall: Website</p>
                 <div class="project-languages">
+                  <p>Full Stack Website that allows users to add reviews and thoughts on dinings hall at their university.</p>
                     <p>HTML/CSS</p>
                     <p>JavaScript/React</p>
                     <p>Database/SQL</p>
@@ -600,7 +175,7 @@ html {
         </div>
 
         <div class="project-container project-card">
-            <div class="project-image"></div>
+            <div class="project-image1"></div>
             <div class="project-details">
                 <p class="project-title">Rasa AI Chatbot</p>
                 <div class="project-languages">
@@ -613,7 +188,7 @@ html {
         </div>
 
         <div class="project-container project-card">
-            <div class="project-image"></div>
+            <div class="project-image2"></div>
             <div class="project-details">
                 <p class="project-title">Personal Website</p>
                 <div class="project-languages">
@@ -623,23 +198,77 @@ html {
             </div>
         </div>
     </div>
+</div> -->
+
+
+<div class="projects" id="work">
+    <h1>Projects</h1>
+    <h3>Click Cards To Learn More</h3>
+    <div class="project-holder">
+        <div class="project-card">
+            <a href="https://www.google.com" target="_blank">
+                <div class="project-image"></div>
+                <div class="project-details">
+                    <div class="project-title">RateMyDiningHall: Website</div>
+                    <p class="project-description">Full Stack Website that allows users to add reviews and thoughts on dining halls at their university.</p>
+                    <div class="project-languages">
+                        <span class="language-box">HTML/CSS</span>
+                        <span class="language-box">JavaScript/React</span>
+                        <span class="language-box">Database/SQL</span>
+                        <span class="language-box">C++</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="project-card">
+            <a href="https://www.google.com" target="_blank">
+                <div class="project-image1"></div>
+                <div class="project-details">
+                    <div class="project-title">Rasa AI Chatbot</div>
+                    <p class="project-description">Fully functioning ChatBot used for Yelp.com, allowing user to have a conversation and navigate restaurants and amenities for their needs.</p>
+                    <div class="project-languages">
+                        <span class="language-box">Anaconda</span>
+                        <span class="language-box">Python</span>
+                        <span class="language-box">Database/SQL</span>
+                        <span class="language-box">Rasa Framework</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="project-card">
+            <a href="https://www.google.com" target="_blank">
+                <div class="project-image2"></div>
+                <div class="project-details">
+                    <div class="project-title">Personal Website</div>
+                    <p class="project-description">Personal website created using HTML/CSS, and JS.</p>
+                    <div class="project-languages">
+                        <span class="language-box">HTML/CSS</span>
+                        <span class="language-box">JavaScript/React</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
 </div>
 
 
-
-
-
 <div class='contact' id='footer1'>
-  <h4>Contact</h4>
+  <strong><h4>Contact</h4></strong>
   <h3>I'd Love To Connect!</h3>
   <div class='contact-info'>
     <div class='contact-holder'>
       <strong><p>LinkedIn</p></strong>
-      <a href="https://www.linkedin.com/in/sanjna-sunil26/"><img src="linkedin.png" width='25' height='20'></a>
+      <a href="https://www.linkedin.com/in/sanjna-sunil26/" target="_blank"><img src="linkedin.png" width='50' height='50'></a>
     </div>
     <div class='contact-holder'>
       <strong><p>Email</p></strong>
-      <a href="mailto:sanjnasu@usc.edu"><img src="email.jpg" width='25' height='25'></a>
+      <a href="mailto:sanjnasu@usc.edu"><img src="email.png" width='50' height='50'></a>
+    </div>
+    <div class='contact-holder'>
+      <strong><p>GitHub</p></strong>
+      <a href="https://github.com/sanjnasun/sanjnasun.github.io" target="_blank"><img src="github-mark.png" width='50' height='50'></a>
     </div>
   </div>
 </div>
@@ -647,37 +276,13 @@ html {
 
 
 
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
-
-$(document).ready(function(){
-  // Add smooth scrolling to all links with the "scroll" class
-  $(".scroll").on('click', function(event) {
-    if (this.hash !== "") {
-      event.preventDefault();
-      var hash = this.hash;
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-        window.location.hash = hash;
-      });
-    }
-  });
-
-  
-  $(".section").each(function() {
-    $(this).waypoint(function() {
-      $(this.element).addClass('in-view');
-    }, {
-      offset: '80%' 
-    });
-  });
-});
-</script>
 <div class="footer">
     <p>© 2023 Sanjna Sunil</p>
 </div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
